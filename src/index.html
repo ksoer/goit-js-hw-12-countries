@@ -12,11 +12,20 @@
     />
   </head>
   <body>
-    <main class="search">
-      <input class="input" type="text" placeholder="search" autocomplete="of" />
-      <button type="submit">Click</button>
-      <ul class="listItemCountrie"></ul>
-    </main>
+    <form class="form-inline search-form js-search-form">
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="searchQuery" class="sr-only"></label>
+        <input
+          type="text"
+          class="form-contro"
+          name="query"
+          id="searchQuery"
+          placeholder="Search country"
+          autocomplete="off"
+        />
+      </div>
+      <ul class="articles js-articles"></ul>
+    </form>
     <script src="./index.js"></script>
   </body>
 </html>
