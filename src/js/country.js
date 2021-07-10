@@ -1,11 +1,11 @@
 import countrySearch from './service/country-service.js';
 import refs from './refs'
 import articlesOneCountry from '../templates/templatesOneCountry.hbs';
-import countryList from '../templates/templatesManyCoutry.hbs'
+import countryList from '../templates/templatesManyCoutry.hbs';
 
 import '@pnotify/core/dist/BrightTheme.css';
 const { error } = require('@pnotify/core');
-var debounce = require('lodash.debounce');
+const debounce = require('lodash.debounce');
 
 
 refs.searchForm.addEventListener('input', debounce(countrySearchInputHandler, 500));
